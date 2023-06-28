@@ -1,0 +1,52 @@
+<section class="social-feed">
+  <h2>{{ section.settings.heading }}</h2>
+  <div class="social-carousel owl-carousel owl-theme">
+    {% for block in section.blocks %}
+    <div class="social-item">
+      <a href="{{ block.settings.link }}" target="_blank"><img src="{{ block.settings.image | img_url:'master' }}" alt=""></a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Social Carousel",
+    "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Title"
+    }
+    ],
+    "blocks": [
+       {
+         "name": "Brainder",
+         "type": "slide",
+         "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Select"
+          },
+           {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          }
+         ]
+       }
+     ],
+    "presets": [
+      {
+        "name": "Social Carousel"
+  }
+      ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

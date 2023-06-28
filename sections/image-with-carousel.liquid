@@ -1,0 +1,88 @@
+<section class="image-with-carousel">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5 position-relative">
+          <div class="image-with-video">
+            <img src="{{ section.settings.image | img_url:'master' }}" alt="">
+            <a href="{{ section.settings.video-url }}" class="video-btn" data-lity><img src="{{ 'video-play.svg' | asset_url }}" alt=""></a>
+          </div>
+      </div>
+      <div class="col-md-7">
+        <div class="side-carousel owl-carousel owl-theme">
+          {% for block in section.blocks %}
+          <div class="item-carousel">
+            <h3>{{ block.settings.subtitle }}</h3>
+            <h2>{{ block.settings.title }}</h2>
+            <p class="content">{{ block.settings.content }}</p>
+            <h4>{{ block.settings.name }}</h4>
+            <p class="designation">{{ block.settings.designation }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+{% schema %}
+  {
+    "name": "Image With Carousel",
+    "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "video-url",
+      "label": "Video URL",
+      "default": "https://youtu.be/dV5OmLIjXd0"
+    }
+    ],
+    "blocks": [
+       {
+         "name": "Slide",
+         "type": "slide",
+         "settings": [
+          {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Sub Title"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "textarea",
+            "id": "content",
+            "label": "Content"
+          },
+          {
+            "type": "text",
+            "id": "name",
+            "label": "Name"
+          },
+          {
+            "type": "text",
+            "id": "designation",
+            "label": "Designation"
+          }
+         ]
+       }
+     ],
+    "presets": [
+      {
+        "name": "Image With Carousel"
+  }
+      ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

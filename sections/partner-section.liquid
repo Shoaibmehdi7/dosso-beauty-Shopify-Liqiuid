@@ -1,0 +1,51 @@
+<section class="partner-section">
+  <h2>{{ section.settings.heading }}</h2>
+  <div class="logo-carousel owl-carousel owl-theme">
+    {% for block in section.blocks %}
+    <div class="logo-item">
+      <a href="{{ block.settings.link }}" target="_blank"><img src="{{ block.settings.image | img_url:'master' }}" alt=""></a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Partner Section",
+    "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Title"
+    }
+    ],
+    "blocks": [
+       {
+         "name": "Logo",
+         "type": "slide",
+         "settings": [
+           {
+             "type": "image_picker",
+             "id": "image",
+             "label": "Logo"
+           },
+           {
+             "type": "url",
+             "id": "link",
+             "label": "Link"
+           }
+         ]
+       }
+     ],
+    "presets": [
+      {
+        "name": "Partner Section"
+  }
+      ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

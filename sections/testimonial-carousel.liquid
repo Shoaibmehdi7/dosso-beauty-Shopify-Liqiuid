@@ -1,0 +1,91 @@
+<section class="testimonial-section" style="background-image: url({{ section.settings.bg | img_url:'master' }});">
+  <div class="testimonial-row">
+    <div class="heading-part">
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+    <div class="testimonial-part">
+      <div class="testimonial-carousel owl-carousel owl-theme">
+        {% for block in section.blocks %}
+        <div class="testimonial-item">
+          <div class="item-heading-part">
+              <div class="title-star">
+                <h3>{{ block.settings.title }}</h3>
+                <img src="{{ 'star.svg' | asset_url }}" alt="">
+              </div>
+              <div class="qoute">
+                 <img src="{{ 'qoute.svg' | asset_url }}" alt="">
+              </div>
+          </div>
+          <div class="item-content-part">
+            <p>{{ block.settings.content }}</p>
+          </div>
+          <div class="item-bottom-part">
+            <div class="item-name">
+              {{ block.settings.name }}
+            </div>
+            <div class="item-date">
+              {{ block.settings.date }}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Testimonial Carousel",
+    "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Title"
+    }
+    ],
+    "blocks": [
+       {
+         "name": "Review",
+         "type": "slide",
+         "settings": [
+           {
+             "type": "text",
+             "id": "title",
+             "label": "Product Name"
+           },
+           {
+            "type": "textarea",
+            "id": "content",
+            "label": "Review content"
+          },
+          {
+           "type": "text",
+           "id": "name",
+           "label": "Reviewer Name"
+         },
+         {
+          "type": "text",
+          "id": "date",
+          "label": "Review Date"
+        }
+         ]
+       }
+     ],
+    "presets": [
+      {
+        "name": "Testimonial Carousel"
+  }
+      ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,1526 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@font-face {
+  font-family: "TAN";
+  src: url(https://cdn.shopify.com/s/files/1/0750/1132/6258/files/TAN_-_WAVERLY.woff);
+}
+@font-face {
+  font-family: "UnivaNova";
+  font-weight:400;
+  src: url(https://cdn.shopify.com/s/files/1/0750/1132/6258/files/UnivaNova-Regular.woff);
+}
+@font-face {
+  font-family: "UnivaNova";
+  font-weight:500;
+  src: url(https://cdn.shopify.com/s/files/1/0750/1132/6258/files/UnivaNova-Medium.woff);
+}
+@font-face {
+  font-family: "UnivaNova";
+  font-weight:600;
+  src: url(https://cdn.shopify.com/s/files/1/0750/1132/6258/files/UnivaNova-SemiBold.woff);
+}
+body,html {
+    overflow-x: hidden;
+}
+h2,h1, .product-icon h3, .jdgm-rev__author, .multicolumn-card__info h3, .title-star h3, .brainder-item h3, .braidner-review-content h3
+{
+  font-family:'TAN' !important;
+}
+p
+{
+  font-family: 'UnivaNova';
+}
+h2 span {
+    color: #496410;
+}
+.accordion__title {
+    font-family: 'UnivaNova';
+}
+h2{
+  text-transform:uppercase;
+}
+.brainder-carousel a {
+    text-decoration: none;
+}
+.image-with-text__text ul li:before {
+    content: "";
+    width: 12px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    padding: 0;
+    background: #496410;
+    left: -21px;
+}
+.product__media-list .media img {
+    border-radius: 20px;
+}
+.image-with-text__text ul li {
+    position: relative;
+}
+.image-with-text .rte>p {
+    font-family: 'UnivaNova';
+    font-size: 15px;
+    color: #012622;
+    margin: 10px 0;
+}
+h2.jdgm-rev-widg__title {
+}
+
+.jdgm-rev__body>p {
+    font-family: 'UnivaNova';
+    font-size: 14px;
+}
+
+.jdgm-rev__author {
+    font-size: 14px;
+}
+
+
+
+.jdgm-rev__timestamp {
+    font-family: 'UnivaNova';
+    font-size: 12px;
+}
+
+.jdgm-write-rev-link {
+    padding: 12px 28px !important;
+    text-decoration: none;
+    font-family: UnivaNova;
+    color: #fff !important;
+    background: #496410;
+    font-size: 14px;
+    transition: .2s all;
+    border: 1px solid #496410 !important;
+}
+.jdgm-write-rev-link:hover {
+  background:transparent;
+   color: #496410 !important;
+}
+.jdgm-rev-widg__summary-text {
+    font-family: 'UnivaNova';
+}
+.main-search button {
+    background: transparent;
+    border: 0;
+}
+.list-menu__item {
+    font-family: 'UnivaNova';
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+}
+.main-search input {
+    border: 0;
+    font-size: 14px;
+    width: 100%;
+    color: #1F2630;
+}
+
+.main-search {
+    border: 1px solid rgb(31 38 48 / 50%);
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+}
+.footer__content-bottom {
+    padding: 0 !important;
+    border-color: #9f9f9f !important;
+}
+ul.footer-block__details-content.list-unstyled {
+    list-style: revert;
+    color: #fff;
+    padding-left: 15px;
+}
+.main-search button img {
+    width: 20px;
+}
+
+.header__icon--account {
+    border: 1px solid #1f2630;
+    border-radius: 14px;
+}
+
+.main-page-title {
+    margin-bottom:20px !important;
+}
+.shopify-policy__container, .page-width--narrow {
+    max-width: 1100px;
+}
+.grid__item .product-img img {
+    width: 100%;
+}
+.shopify-policy__title h1 {
+    padding: 30px 0;
+    font-size: 38px;
+}
+.rte {
+    font-family: 'UnivaNova';
+    font-size: 16px;
+}
+
+.collection-hero__title {text-transform: uppercase;font-size: 38px;}
+
+.collection-hero__description {
+    font-family: 'UnivaNova';
+}
+.banner-top h1 {
+  text-transform:uppercase;
+  font-size: 55px;
+  color: #012622;
+  line-height: 1.4;
+  margin-right:40px;
+}
+
+.banner-top p {
+    font-size: 22px;
+    color: #012622;
+    font-family: UnivaNova;
+    margin: 0 0 30px;
+}
+
+.banner-top {
+    padding: 50px 0;
+}
+.banner-top .banner-img {
+    max-width: 100%;
+    border-radius: 25px;
+}
+.announcement-bar__message {
+    font-family: 'UnivaNova';
+    text-transform: uppercase;
+    margin: 0;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.btn-list a {
+    height: 50px;
+    text-align: center;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    justify-content: center;
+    border-radius: 15px;
+    text-decoration: none;
+    transition:.3s all;
+    border: 1px solid #849517;
+    font-family: UnivaNova;
+    padding: 0 20px;
+    font-weight: 500;
+}
+.btn-list .btn-first:hover {
+    background: #FFF;
+    color: #000;
+}
+.btn-list .btn-first:hover img{
+    filter:none;
+}
+.btn-list .btn-second:hover {
+    background: #849517;
+    color: #fff;
+}
+.btn-list .btn-second:hover img{
+    filter:brightness(0) invert(1);
+}
+.btn-list a img {
+    margin-left: 10px;
+}
+
+.btn-first img {
+    filter: brightness(0) invert(1);
+}
+.btn-second {
+    color: #012622;
+    font-weight: 500;
+}
+.btn-list {
+    display: flex;
+} 
+
+.btn-first {
+    background: #849517;color: #fff;
+}
+.product-item h2 {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.6;
+    min-height: 80px;
+}
+.pagination__list {
+    width: 100%;
+}
+.product-item {
+    padding: 15px;
+    box-shadow: 19px 32px 88px rgb(0 0 0 / 5%);
+    border: 1px solid rgb(0 0 0 / 10%);
+    background: #fff;
+    border-radius: 14px;
+    min-height: 443px;
+}
+.collection-one h2 {
+  min-height: auto;
+}
+.collection-one
+{
+  min-height:400px;
+}
+.product-img img {
+    height: 270px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-content .collection-btn {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 15px;
+}
+.product-content > a {
+    text-decoration: none;
+}
+.product-content .collection-btn img {
+    width: 20px !important;
+}
+.feature-collection button.owl-dot.active span {
+    background: #A16017 !important;
+}
+
+.feature-collection button.owl-dot span {
+    background: rgb(161 96 23 / 19%) !important;
+}
+
+.feature-collection button.owl-dot {
+    margin: 30px 0 0;
+}
+
+.featured-product .container {
+    max-width: 1050px;
+}
+
+.collection-list .owl-dots {
+    margin: 30px 0 0 !important;
+}
+
+.collection-list .owl-theme .owl-dots .owl-dot.active span {
+    background: #fff;
+}
+.product-content p {
+    font-family: 'UnivaNova';
+    font-size: 13px;
+}
+
+.product-content {
+    margin: 15px 0px 0;
+}
+
+.product-carousel .owl-stage-outer {
+    overflow: visible;
+}
+
+.collection__title .title {
+    color: #012622;
+    font-size: 38px;
+}
+
+.collection__description p {
+    font-family: 'UnivaNova';
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.feature-collection {
+    overflow-x: hidden;
+    padding: 100px 0 50px !important;
+    background-position: top;
+    background-size: cover;
+}
+.product-carousel .owl-item, .feature-carousel .owl-item {
+    opacity: 0;
+}
+
+.product-carousel .owl-item.active, .feature-carousel .owl-item.active {
+    opacity: 1;
+}
+.featured-product-box {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #496410;
+    background: #F4F6F5;
+    border-radius: 10px;
+    padding: 0 0 30px;
+}
+
+.featured-product {
+    padding: 50px 0;
+}
+
+.box-price {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #496410;
+    color: #fff;
+    border-radius: 0px 0px 25px 25px;
+}
+
+.box-price * {
+    color: #fff;
+    font-family: 'UnivaNova';
+    font-size: 15px;
+}
+
+.product-box-content {
+    font-family: 'UnivaNova';
+    font-size: 18px;
+    color: #496410;
+    font-weight: 500;
+    max-width: 270px;
+    margin: 0 auto 10px;
+}
+
+.product-box-image {
+    margin: 20px 0 0;
+}
+
+.featured-product h2 {
+    color: #012622;
+    font-size: 30px !important;
+}
+
+.featured-product p {
+    color: #012622;
+    font-size: 16px;
+    max-width: 480px;
+    line-height: 1.5;
+    margin: 10px 0 20px;
+      font-family: 'UnivaNova';
+}
+
+.featured-product .feature-btn {
+    background: #849517;
+    color: #fff;
+    padding: 13px 20px;
+    display: flex;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 15px;
+    margin: 20px 0 0;
+    width: 170px;
+    justify-content: center;
+    font-family: Poppins;
+}
+.featured-product .feature-btn:hover {
+  background: #849517;
+  color:#fff;
+}
+.featured-product .feature-btn:hover img {
+  background: #849517;
+  color:#fff;
+  filter:none;
+}
+.featured-product .feature-btn img {
+    margin-left: 10px;
+    filter: brightness(0) invert(1);
+}
+.sustainability-section {
+    background-size: cover;
+    background-position: bottom;
+    padding: 90px 0 140px;
+    text-align: center;
+}
+
+.icon-box-wrapper {
+    display: flex;
+    margin: 40px 0 0;
+}
+
+.icon-box {
+    flex: 1;
+    border: 1.00191px solid rgb(0 0 0 / 10%);
+    border-radius: 20.0382px;
+    margin: 0 5px;
+    padding: 14px;
+}
+
+.sustainability-section h2 {
+    font-size: 38px;
+}
+
+.sustainability-section p {
+    font-family: 'UnivaNova';
+    font-size: 18px;
+    max-width: 845px;
+    margin: 0 auto;
+}
+
+.icon-box h3 {
+    font-family: 'UnivaNova';
+    font-weight: 600;
+    margin: 15px 0 0;
+    font-size: 16px;
+}
+
+.icon-box img {
+    width: 65px;
+}
+
+.sustainability-section .btn-first {
+    background: #849517;
+    color: #fff;
+    padding: 13px 20px;
+    display: flex;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 15px;
+    margin: 20px auto 0;
+    width: 180px;
+    justify-content: center;
+    font-family: 'Poppins';
+}
+.title-star img {
+    max-width: 70px;
+}
+
+.qoute img {
+    max-width: 30px;
+}
+
+.testimonial-item {
+    background: #fff;
+    padding: 20px;
+    border: 1.5px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 27px 44px 66px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    min-height: 400px;
+}
+.testimonial-carousel .owl-nav button {
+    width: 30px;
+    height: 30px;
+    background: url(arrow-right.png)!important;
+    background-size: 25px!important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    font-size: 0 !important;
+}
+p.date {
+    margin: 20px 0 0px !important;
+    font-family: 'UnivaNova';
+    font-size: 18px;
+    font-weight: 600;
+    color: #012622;
+}
+.testimonial-carousel .owl-nav {
+    text-align: right !important;
+    margin: 40px  100px 0 0;
+}
+
+.testimonial-carousel button.owl-prev {
+    transform: rotate(180deg);
+}
+.item-heading-part {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.7px solid #DEDEDE;
+    padding-bottom: 10px;
+    margin: 0 0 15px;
+}
+
+
+
+.item-content-part {
+    font-family: 'UnivaNova';
+    font-size: 15px;
+}
+
+.testimonial-row {
+    display: flex;
+    align-items: center;
+}
+
+.heading-part {
+    width: 40%;
+}
+
+.testimonial-part {
+    width: 60%;
+}
+
+.heading-part h2 {color: #fff;font-size: 38px;max-width: 400px;margin-left: auto;}
+
+.testimonial-section {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 50px 0;
+}
+
+.item-bottom-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 0;
+}
+
+.item-name {
+    font-size: 18px;
+    font-family: 'UnivaNova';
+    color: #849517;
+}
+
+.item-date {
+    font-size: 16px;
+    font-family: 'UnivaNova';
+    color: rgb(52 81 78 / 80%);
+}
+.press-release-section {
+    background-position: right 0;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    padding: 70px 0;
+}
+
+.press-release-section .container > h2 {
+    font-size: 38px;
+}
+
+.press-release-section .container > p {
+    font-family: 'UnivaNova';
+    font-size: 16px;
+    max-width: 900px;
+    margin: 20px 0;
+}
+
+.press-release-section .btn-first {
+    background: #849517;
+    color: #fff;
+    padding: 12px 24px;
+    display: flex;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 15px;
+    margin: 0 0 50px;
+    width: 197px;
+    justify-content: center;
+    font-family: 'Poppins';
+}
+
+.first-press > img {
+    max-width: 100%;
+    border: 1px solid #496410;
+}
+
+.first-press h2 {
+    font-family: 'UnivaNova';
+    font-weight: 600;
+    font-size: 30px;
+    margin: 20px 0 10px;
+}
+
+.excerpt {
+    font-family: 'UnivaNova';
+    font-size: 15px;
+}
+
+.read-more {
+    color: #849517;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.press-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+.press-content h2 {
+    font-family: 'UnivaNova';
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.press-content p {
+    font-family: 'UnivaNova';
+    font-size: 16px;
+}
+
+.read-more img {
+    margin-left: 10px;
+}
+
+.press-image img {
+    border: 1px solid #496410;
+    max-width: 100%;
+}
+
+.press-image {
+    width: 27%;
+}
+
+.press-content {
+    width: 70%;
+    padding-left: 20px;
+}
+.field__button {
+    position: static;
+    display: flex;
+    background: #fff!important;
+    width: 170px!important;
+    padding: 17px;
+    border-radius: 15px;
+    font-size: 16px;
+    margin: 20px auto 0!important;
+    font-family: 'Poppins';
+    color: #849517 !important;
+    font-weight: 500;
+}
+
+.newsletter__wrapper .newsletter-form__field-wrapper {
+    max-width: 100% !important;
+}
+
+.newsletter-form {
+    max-width: 800px !important;
+}
+
+.newsletter-form__field-wrapper .field__input {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    height: 55px;
+    text-transform: capitalize;
+    font-family: 'UnivaNova';
+}
+.card-des {
+    height: 60px;
+    line-height: 20px;
+    overflow: hidden;
+    font-family: 'UnivaNova';
+    font-size: 15px;
+    color: #012622;
+    margin: 10px 0 20px;
+}
+.card-des a {
+    text-decoration: none;
+    color: #012622;
+}
+.newsletter__wrapper h2 {
+    font-size: 38px;
+    color: #fff;
+}
+.newsletter__wrapper {
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: unset;
+}
+.newsletter__subheading {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'UnivaNova';
+    margin: 15px auto;
+    text-transform: capitalize;
+}
+
+.newsletter-form__field-wrapper .field__input::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.field__button img {
+    padding-left: 20px;
+}
+.collection-list-title {
+    font-size: 38px;
+    color: #fff;
+}
+p.content {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'UnivaNova';
+}
+.footer-block__heading {
+    font-size: 22px;
+    color: #fff;
+}
+
+.footer-block__details-content .list-menu__item--link, .copyright__content a {
+    color: #fff !important;
+    font-family: 'UnivaNova';
+}
+
+.footer-block__details-content.rte {
+    color: #fff;
+    font-family: 'UnivaNova';
+    font-size: 12px;
+}
+
+.collection-list {
+    overflow-x: hidden;
+}
+.bottom-img {
+    width: 240px !important;
+    margin: 20px 0 0;
+}
+
+.footer-block-image {
+    display: block;
+}
+
+.footer-block__image-wrapper {
+    max-width: 100% !important;
+    border:0px;
+}
+
+.footer-block__image-wrapper img {
+    width: 170px;
+}
+.footer__content-bottom {
+    padding: 0;
+}
+.footer__content-bottom-wrapper {
+    justify-content: space-between;
+}
+.copyright__content {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'UnivaNova';
+}
+.link.list-social__link {
+    color: #D2D9C4;
+}
+.partner-section {
+    padding: 70px 0;
+}
+
+.partner-section h2 {
+    font-size: 38px;
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.logo-item img {
+    width: 124px !important;
+}
+
+.logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(0 0 0 / 10%);
+    box-shadow: 19px 32px 88px rgb(0 0 0 / 5%);
+    border-radius: 15px;
+    height: 125px;
+    background: #fff;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+}
+
+.owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+.product__title h1 {
+    line-height: 1.7;
+}
+.price .price-item {
+    font-family: 'UnivaNova';
+    font-size: 22px;
+}
+.product-form__submit {
+    background: #849517;
+    border-radius: 7px;
+    font-family: "Poppins";
+    color: #fff;
+}
+.product-form__submit:before,.product-form__submit:after {
+    display: none;
+}
+
+
+.quantity:after {
+    box-shadow: none;
+    border: 1px solid rgb(217 217 217 / 70%);
+    border-radius: 5px;
+}
+
+button.quantity__button {
+    color: #D8232A;
+}
+
+.quantity__input {
+    font-family: 'UnivaNova';
+    font-weight: 600;
+}
+
+.shopify-payment-button__button--unbranded {
+    border-radius: 7px !important;
+    background: #5A31F4 !important;
+    font-family: 'Poppins';
+}
+
+.shopify-payment-button__button--unbranded:before,.shopify-payment-button__button--unbranded:after {
+    display: none;
+}
+
+.product-form__quantity {
+    display: flex;
+    align-items: center;
+}
+
+.product-form__quantity label {
+    font-family: 'UnivaNova';
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 20px;
+}
+.product-media-container.constrain-height.media-fit-contain {
+    border: 1px solid rgba(132, 149, 23, 0.3);
+    filter: drop-shadow(18px 16px 28px rgba(0, 0, 0, 0.06));
+    border-radius: 20px;
+}
+.product__info-wrapper .price__container {
+    display: block !important;
+    margin: 0;
+    padding: 10px 0;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+.product-icon-box {
+    padding: 150px 0 100px;
+    background-position: top !important;
+    background-size: cover !important;
+    text-align: center;
+}
+
+.product-icon-box h2 {
+    font-size: 38px;
+}
+
+.product-icon-box .icon-box-wrapper {
+    justify-content: center;
+}
+
+.product-icon img {
+    width: 90px;
+    margin: 0 0 20px;
+}
+
+.product-icon {
+    padding: 0 40px;
+    position: relative;
+}
+
+.product-icon h3 {
+    color: #012622;
+    font-size: 15px;
+}
+
+.product-icon:not(:last-child):after {
+    width: 1px;
+    height: 95px;
+    content: "";
+    position: absolute;
+    opacity: 0.2;
+    background: #D8232A;
+    top: 0;
+    right: 0;
+}
+.fg_1 {
+    display: none;
+}
+
+.custom_vtcolumn>div {
+    flex-direction: row !important;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.custom_vtcolumn>div>div {
+    width: 35px !important;
+    height: 35px;
+    background-size: 31px !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin: 0 !important;
+}
+
+#order_placed_date > div {
+    background-image: url(https://cdn.shopify.com/s/files/1/0750/1132/6258/files/Order_placed.png?v=1682013508);
+}
+
+.fa-stack {
+    display: none !important;
+}
+
+#visual_timer_wrapper1 {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+}
+
+#visual_timer_wrapper1 .dt-vt-est {
+    padding: 10px 0;
+    border-top: 1px solid #d9d9d9;
+    margin-top: 20px;
+    font-family: 'UnivaNova';
+}
+
+.shopify-app-block {
+    margin: 0 !important;
+}
+
+#visual_timer_wrapper1 .dt-vt-est span {
+    font-size: 21px !important;
+    font-weight: 500;
+}
+
+.custom_vtcolumn {
+    position: relative;
+    margin-right: 20px;
+}
+
+.custom_vtcolumn:not(:last-child):after {
+    background-position: center center;
+    content: "";
+    width: 30px;
+    height: 100%;
+    background-image: url(https://cdn.shopify.com/s/files/1/0750/1132/6258/files/double-arrow.svg?v=1682013282);
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -7px;
+    background-repeat: no-repeat;
+    background-size: 19px;
+}
+
+#order_dispatches_date>div {
+    background-image: url(https://cdn.shopify.com/s/files/1/0750/1132/6258/files/Order_dispatches.png);
+}
+
+#order_delivered_date>div {
+    background-image: url(https://cdn.shopify.com/s/files/1/0750/1132/6258/files/Delivered.png?v=1682013508) !important;
+}
+
+
+.custom_vtcolumn>div span:not(.custom_vtcolumn>div>div span) {
+    font-family: 'UnivaNova';
+    width: 72%;
+    color: #012622;
+    font-size: 9px;
+    text-align: left;
+}
+
+.custom_vtcolumn>div>span:nth-child(2){
+    font-weight: 600;
+    font-size: 15px !important;
+}
+
+.custom_vtcolumn>div>span:not(:nth-child(2)) {
+    padding-left: 33px;
+    width: 100% !important;
+}
+.accordion {
+  background-color: transparent;
+  color: #444;
+  cursor: pointer;
+  padding: 10px 0;
+  border:0px !important;
+  border-top:1px solid #D9D9D9 !important;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  margin: 0 !important;
+  font-family: 'UnivaNova';
+    font-weight: 500;
+}
+.product__info-wrapper .accordion-button {
+    padding: 20px 0;
+    font-family: 'UnivaNova';
+    font-size: 20px;
+    color: #012622;
+    font-weight: 500;
+}
+
+.panel {
+  padding: 0 0px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin: 0 !important;
+  font-family: 'UnivaNova';
+  font-size: 14px;
+}
+.thumbnail {
+    border: 1px solid rgb(132 149 23 / 30%);
+    border-radius: 10px;
+    box-shadow: none !important;
+}
+
+.thumbnail[aria-current] {
+    border-color: #D8232A !important;
+}
+
+.slider-button svg {
+    color: #D8232A !important;
+    height: 10px !important;
+}
+.according-btn {
+    display: flex;
+    align-items: center;
+}
+
+.according-btn img {
+    width: 70px;
+}
+
+.according-btn h3 {
+    color: #012622;
+    font-family: 'UnivaNova';
+    padding-left: 15px;
+}
+
+
+.our-ingredients {
+    padding: 80px 0 70px;
+    background-color: #F1FDFE;
+}
+
+.our-ingredients h2 {
+    font-family: 'TAN';
+    text-align: center;
+    font-size: 38px;
+    margin: 0 0 50px;
+}
+.our-ingredients .accordion:after
+{
+    display:none;
+}
+
+.accordion-flush .accordion-item {
+    background: transparent;
+}
+
+.accordion-button {
+    background: transparent;
+}
+
+.accordion-header {
+    margin: 0 !important;
+}
+.accordion-body {
+    font-size: 14px;
+}
+.col-md-6:nth-child(1) .accordion,.col-md-6:nth-child(2) .accordion {
+    border-top: 0 !important;
+}
+.brainder-box {
+    padding: 80px 60px;
+    text-align: center;
+    background-size: cover;
+}
+
+.brainder-box span {
+    color: #E91010;
+    font-family: 'UnivaNova';
+    font-size: 16px;
+    FONT-WEIGHT: 600;
+    display: block;
+    margin: 0px 0 30px;
+}
+
+.brainder-box h2 {
+    font-size: 38px;
+    color: #012622;
+    margin: 0 0 30px;
+}
+
+.brainder-item {
+    border: 1px solid rgba(1, 38, 34, 0.1);
+    box-shadow: 26.897px 45.3002px 124.576px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 15px 5px;
+    min-height:250px;
+}
+
+.social-handler a {
+    display: flex;
+    justify-content: center;
+}
+
+.social-handler svg {
+    width: 1.2vw;
+    color: #000;
+}
+
+.social-handler a span {
+    color: #000;
+    margin: 0;
+    font-weight: 400;
+    margin-left: 10px;
+    font-size: 1.1vw
+}
+
+.brainder-item img {
+    max-width: 100px;
+    margin: 0 auto;
+    border: 2px solid #496410;
+    border-radius: 50%;
+}
+
+.brainder-item h3 {
+    color: #496410;
+    margin: 25px 0 10px;
+    font-size: .95vw;
+}
+.brainder-item img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+.brainder-item p {
+    font-size: 1vw;
+    color: #012622;
+    font-family: 'UnivaNova';
+}
+.braidner-text 
+{
+    text-align: center;
+    background-size: cover;
+}
+.braidner-text h2 
+{
+    font-size: 38px;
+    color: #fff;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+.braidner-text a 
+{
+    background: #fff;
+    width: 190px;
+    padding: 17px;
+    border-radius: 15px;
+    font-size: 16px;
+    margin: 30px auto 0!important;
+    font-family: Poppins;
+    color: #849517;
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+}
+.braidner-text a img 
+{
+    margin-left: 20px;
+}
+#shopify-section-template--18834004115762__8e9b3a23-58fd-481a-ac5d-d7a23dac7af3 .braidner-text a img {
+  filter: none;
+}
+.braidner-review {
+    background-size: cover;
+    background-position: top;
+    padding: 100px 0 70px;
+}
+
+.braidner-review h2 {
+    font-size: 38px;
+    text-align: center;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
+
+.braidner-review-content img {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.braidner-review-item {
+    border: 1px solid rgba(1, 38, 34, 0.1);
+    box-shadow: 26.897px 45.3002px 124.576px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    margin: 0 0 30px;
+    padding: 20px;
+}
+
+.braidner-review-content h3 {
+    font-size: 21px;
+    text-align: center;
+    line-height: 1.7;
+    max-width: 440px;
+    margin: 20px auto 10px;
+}
+
+.braidner-review-content h4 {
+    font-family: 'UnivaNova';
+    color: #849517;
+    font-size: 22px;
+    text-align: center;
+}
+
+
+.review-detail {
+    display: flex;
+    align-items: center;
+}
+
+.review-detail img {
+    border-radius: 50%;
+    border: 2px solid #496410;
+    width: 80px;
+}
+
+.reviewer-content {
+    padding: 0 30px 0;
+}
+
+.braidner-review-item > p {
+    font-family: 'UnivaNova';
+    font-size: 18px;
+    margin: 19px 0 15px;
+    font-weight: 500;
+}
+
+.reviewer-content h3 {
+    font-family: 'TAN';
+    font-size: 20px;
+    color: #012622;
+}
+
+.reviewer-content p {
+    margin: 0;
+    font-family: 'UnivaNova';
+    font-size: 18px;
+    font-weight: 500;
+    color: #849517;
+}
+.image-with-carousel
+{
+  padding:50px 0;
+}
+#shopify-section-template--18876326773042__aea8d5b2-0c87-4145-9bbe-88187a329c84 .field__button img, #shopify-section-template--18834004115762__c455922c-94d4-487f-8fc2-be79f9f86ca1 .field__button img {
+  filter: brightness(0) invert(1);
+}
+.side-carousel .owl-stage-outer {
+    overflow-x: hidden;
+}
+
+.image-with-carousel .container {
+    max-width: 1000px;
+}
+
+.image-with-video img {
+    max-width: 100%;
+}
+
+.item-carousel .content {
+    color: #000;
+}
+
+.item-carousel h2 {
+    font-size: 38px;
+    font-family: 'TAN';
+    margin: 30px 0 10px;
+}
+
+.item-carousel h3 {
+    font-family: 'UnivaNova';
+    color: #012622;
+}
+
+.item-carousel h4 {
+    font-family: 'TAN';
+    color: #012622;
+    font-weight: 600;
+    margin: 20px 0 5px;
+}
+
+.designation {
+    font-size: 14px;
+    font-family: 'UnivaNova';
+}
+
+.item-carousel {
+    padding-left: 30px;
+}
+.video-btn {
+    bottom: 100px;
+    display: inline-block;
+    position: absolute;
+    left: -50px;
+    max-width: 120px;
+}
+.side-carousel .owl-nav {
+    text-align: right;
+}
+#shopify-section-template--15811700097205__13c61e2f-e1dc-4b9f-b628-f00e66400cc6 img {
+    filter: none;
+}
+#shopify-section-template--15811700097205__aea8d5b2-0c87-4145-9bbe-88187a329c84 img {
+    filter: brightness(12.5);
+}
+.side-carousel .owl-nav button {
+    font-size: 0px !important;
+    width: 20px;
+    height: 20px;
+    background: url(https://cdn.shopify.com/s/files/1/0750/1132/6258/files/arrow_1.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 20px !important;
+    background-position: center !important;
+}
+#shopify-section-template--15811699933365__8e9b3a23-58fd-481a-ac5d-d7a23dac7af3 .braidner-text a img {
+    filter: none;
+}
+.side-carousel button.owl-prev {
+    transform: rotate(180deg);
+}
+.wholesale-breakdown {
+    background-size: cover;
+    padding: 80px 0 80px;
+    margin: 0 0 -30px;
+}
+.breakdown-content {
+    font-size: 15px;
+    font-family: 'UnivaNova';
+    max-width: 800px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+.wholesale-breakdown h2 {
+    font-family: 'TAN';
+    font-size: 38px;
+    text-align: center;
+}
+.price-product {
+    color: #000;
+    font-family: 'UnivaNova';
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+.breakdown-row {
+    max-width: 930px;
+    margin: 50px auto 0;
+    display: flex;
+}
+
+.breakdown-item {
+    flex: 1;
+    text-align: center;
+    background: #FFFFFF;
+    border: 0.5px solid #849517;
+    box-shadow: 19px 32px 88px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    min-height: 200px;
+    margin: 0 8px;
+    transition: .3s all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.breakdown-item p {
+    color: #282924;
+    font-family: 'UnivaNova';
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.breakdown-item h3 {
+    font-family: 'TAN';
+    color: #D8232A;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.breakdown-item:hover {
+    background: #D8232A;
+}
+
+.breakdown-item:hover * {
+    color: #fff;
+}
+#shopify-section-template--18876326773042__13c61e2f-e1dc-4b9f-b628-f00e66400cc6 .btn-first img {
+    filter: none;
+}
+.braidner-review-content img:nth-child(2) {
+    max-width: 255px;
+    margin: 20px auto 10px;
+}
+.card__heading.h2 {
+    font-family: 'TAN';
+}
+
+.article-card__excerpt {
+    font-family: 'UnivaNova';
+    font-size: 16px;
+}
+
+
+.card__content {
+    padding: 20px !important;
+}
+
+.title--primary {
+    font-family: 'TAN';
+}
+
+.article-template__title {
+    font-family: 'TAN';
+}
+.collabs-page__main h1 {
+    font-family: 'TAN';
+    font-size: 38px;
+}
+
+.collabs-page__intro {
+    width: auto!important;
+    max-width: 780px!important;
+}
+
+.collabs-page__main p {
+    font-family: 'UnivaNova';
+    font-size: 16px;
+}
+
+.collabs-page__cta-main {
+    font-family: 'UnivaNova';
+    border-radius: 15px;
+}
+
+.collabs-page__main h2 {
+    font-family: 'TAN';
+}
+
+.collabs-page__partnership-list li {
+    font-size: 16px;
+}
+
+.collabs-page__cta-login-link {
+    font-size: 16px;
+    font-family: 'UnivaNova';
+}
+
+.product-count .product-count__text{
+  display:none;
+}

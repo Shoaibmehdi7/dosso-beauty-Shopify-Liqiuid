@@ -1,0 +1,114 @@
+<section class="press-release-section" style="background-image:url({{ section.settings.img | img_url:'master' }});" id="press">
+  <div class="container">
+    <h2>{{ section.settings.heading }}</h2>
+    <p>{{ section.settings.content }}</p>
+    <a href="" class="btn-first"><span>{{ section.settings.btn-text }}</span></a>
+    <div class="row">
+      <div class="col-md-6">
+        {% for block in section.blocks limit:1 %}
+        <div class="first-press">
+          <img src="{{ block.settings.image | img_url:'master' }}" alt="">
+          <p class="date">{{ block.settings.date_picker }}</p>
+          <h2>{{ block.settings.heading }}</h2>
+          <p class="excerpt">{{ block.settings.content }}</p>
+          <a href="{{ section.settings.url }}" class="read-more">Read More <img src="https://cdn.shopify.com/s/files/1/0750/1132/6258/files/arrow_1.svg?v=1681830970" alt=""></a>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="col-md-6">
+        {% for block in section.blocks offset:1 %}
+        <div class="press-item">
+          <div class="press-image">
+            <img src="{{ block.settings.image | img_url:'master' }}" alt="">
+          </div>
+          <div class="press-content">
+            <p class="item-date">{{ block.settings.date_picker }}</p>
+            <h2>{{ block.settings.heading }}</h2>
+            <p class="item-excerpt">{{ block.settings.content }}</p>
+            <a href="{{ section.settings.url }}" class="read-more">Read More <img src="https://cdn.shopify.com/s/files/1/0750/1132/6258/files/arrow_1.svg?v=1681830970" alt=""></a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Press Release",
+    "settings": [
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Background"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "text",
+      "id": "btn-text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "btn-url",
+      "label": "Button URL"
+    }
+    ],
+    "blocks": [
+       {
+         "name": "Press",
+         "type": "slide",
+         "settings": [
+           {
+             "type": "image_picker",
+             "id": "image",
+             "label": "Select Image"
+           },
+           {
+             "type": "text",
+             "id": "heading",
+             "label": "Press Title"
+           },
+           {
+             "type": "text",
+             "id": "content",
+             "label": "Press Excerpt"
+           },
+           {
+            "type": "text",
+            "id": "date_picker",
+            "label": "Choose date",
+            "default": "04-02-2023",
+            "info": "e.g. mm-dd-yyyy"
+          },
+           {
+             "type": "url",
+             "id": "url",
+             "label": "Press URL"
+           }
+         ]
+       }
+     ],
+    "presets": [
+      {
+        "name": "Press Release"
+  }
+      ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,70 @@
+<section class="banner-top">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+     <h1>{{ section.settings.heading }}</h1>
+      <p>{{ section.settings.content }}</p>
+      <div class="btn-list">
+        {% if section.settings.btn-text-1 != '' %}<a href="{{ section.settings.btn-url-1 }}" class="btn-first">{{ section.settings.btn-text-1 }}</a>{% endif %}
+        {% if section.settings.btn-text-2 != '' %}<a href="{{ section.settings.btn-url-2 }}" class="btn-second">{{ section.settings.btn-text-2 }}</a>{% endif %}
+      </div>
+    </div>
+    <div class="col-md-5">
+      <img src="{{ section.settings.img | img_url:'master' }}" class="banner-img" alt="">
+    </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Top Banner",
+    "settings": [
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "text",
+      "id": "btn-text-1",
+      "label": "First Button Text"
+    },
+    {
+      "type": "url",
+      "id": "btn-url-1",
+      "label": "First Button URL"
+    },
+    {
+      "type": "text",
+      "id": "btn-text-2",
+      "label": "Second Button Text"
+    },
+    {
+      "type": "url",
+      "id": "btn-url-2",
+      "label": "Second Button URL"
+    }
+    ],
+    "presets": [
+      {
+        "name": "Top Banner"
+  }
+      ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

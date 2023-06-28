@@ -1,0 +1,109 @@
+<section class="braidner-review" style="background-image:url({{ section.settings.bg | img_url:'master' }});">
+  <div class="container">
+    <h2>{{ section.settings.heading }}</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="braidner-review-content">
+          <img src="{{ section.settings.rightimage | img_url:'master' }}" alt="">
+          {% if section.settings.image %}<img src="{{ section.settings.image | img_url:'master' }}">{% endif %}
+          <h3>{{ section.settings.content }}</h3>
+          <h4>{{ section.settings.name }}</h4>
+        </div>
+      </div>
+      <div class="col-md-6">
+        {% for block in section.blocks %}
+        <div class="braidner-review-item">
+          <img src="{{ 'brainder-star.svg' | asset_url }}" alt="">
+          <p>{{ block.settings.content }}</p>
+          <div class="review-detail">
+            <div class="img">
+              <img src="{{ block.settings.image | img_url:'master' }}" alt="">
+            </div>
+            <div class="reviewer-content">
+              <h3>{{ block.settings.title }}</h3>
+              <p>{{ block.settings.designation }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Brainder Review",
+    "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Add Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "rightimage",
+      "label": "Image"
+    },
+    {
+      "type": "textarea",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "text",
+      "id": "name",
+      "label": "name"
+    }
+    ],
+    "blocks": [
+       {
+         "name": "Brainder",
+         "type": "slide",
+         "settings": [
+           {
+             "type": "textarea",
+             "id": "content",
+             "label": "Reviewer Content"
+           },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Select"
+          },
+           {
+             "type": "text",
+             "id": "title",
+             "label": "Reviewer Name"
+           },
+           {
+             "type": "text",
+             "id": "designation",
+             "label": "Reviewer Designation"
+           }
+         ]
+       }
+     ],
+    "presets": [
+      {
+        "name": "Brainder Review"
+  }
+      ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

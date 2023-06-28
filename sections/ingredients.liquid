@@ -1,0 +1,75 @@
+<section class="our-ingredients">
+  <div class="container">
+    <h2>{{ section.settings.heading }}</h2>
+    <div class="row">
+      {% for block in section.blocks %}
+      {% assign block_index = forloop.index %}
+      <div class="col-md-6">
+        <div class="accordion accordion-flush row">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading{{ block_index }}">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{ block_index }}" aria-expanded="false" aria-controls="flush-collapse{{ block_index }}">
+                <div class="according-btn">
+                  <img src="{{ block.settings.image | img_url:'master' }}">
+                  <h3>{{ block.settings.heading }}</h3>
+                </div>
+              </button>
+            </h2>
+            <div id="flush-collapse{{ block_index }}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{ block_index }}" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                {{ block.settings.icon-content }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Main Ingredients",
+    "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Title"
+    }
+    ],
+    "blocks": [
+       {
+         "name": "Add Ingredient",
+         "type": "slide",
+         "settings": [
+           {
+             "type": "text",
+             "id": "heading",
+             "label": "Ingredient Title"
+           },
+           {
+             "type": "image_picker",
+             "id": "image",
+             "label": "Ingredient Button Image"
+           },
+           {
+             "type": "richtext",
+             "id": "icon-content",
+             "label": "Ingredients content"
+           }
+         ]
+       }
+     ],
+    "presets": [
+      {
+        "name": "Main Ingredients"
+  }
+      ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
